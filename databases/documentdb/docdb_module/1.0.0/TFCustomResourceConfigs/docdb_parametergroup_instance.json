@@ -1,0 +1,22 @@
+{
+  "parameters": [{
+    "name"  : "audit_logs",
+    "value" : "ddl",
+    "apply_method" : "immediate"
+  },
+  {
+    "name"  : "profiler",
+    "value" : "enabled",
+    "apply_method" : "immediate"
+  },
+  {
+    "name"  : "tls",
+    "value" : "enabled",
+    "apply_method" : "immediate"
+  },
+  {
+    "name"  : "ttl_monitor",
+    "value" : "enabled",
+    "apply_method" : "immediate"
+  }]
+}
