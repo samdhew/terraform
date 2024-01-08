@@ -30,6 +30,7 @@ module "example_module" {
   # Additional configuration as needed
 }
 ```
+
 ## Contributing
 
 If you have additional modules or improvements to existing ones, we encourage you to contribute to the repository. Fork the project, make your changes, and submit a pull request. Let's collaborate to make this repository a valuable resource for the Terraform community.
