@@ -1,0 +1,34 @@
+{
+  "endpoints": [{
+    "endpoint_id"  : "tpl1p-dev-dms-endpoint-source",
+    "endpoint_type" : "source",
+    "engine_name" : "aurora",
+    "secrets_manager_arn" : null,
+    "secrets_manager_access_role_arn" : null,
+    "server_name" : "tpl-ppe-mysql.interop-3pl-ppe.pearsondev.tech",
+    "port" : 3306,
+    "database_name" : "gradevalidation",
+    "username" : "mysql_dms_user",
+    "password" : "Sgwsx3l7",
+    "extra_connection_attributes" : null,
+    "ssl_mode" : "none",
+    "certificate_arn" : null,
+    "service_access_role" : null
+  },
+  {
+    "endpoint_id"  : "tpl1p-dev-dms-endpoint-target",
+    "endpoint_type" : "target",
+    "engine_name" : "aurora",
+    "secrets_manager_arn" : null,
+    "secrets_manager_access_role_arn" : null,
+    "server_name" : "tpl-ppe-mysql.interop-3pl-ppe.pearsondev.tech",
+    "port" : 3306,
+    "database_name" : "gradevalidation",
+    "username" : "mysql_dms_user",
+    "password" : "Sgwsx3l7",
+    "extra_connection_attributes" : null,
+    "ssl_mode" : "none",
+    "certificate_arn" : null,
+    "service_access_role" : null
+  }]
+}

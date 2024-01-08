@@ -1,0 +1,184 @@
+{
+  "tasks": [{
+    "replication_task_id"  : "tpl1p-dev-dms-gradevalidation-task",
+    "source_endpoint_arn" : "arn:aws:dms:us-east-1:028824297233:endpoint:PIKWIFMTFWG42ZPRUFCCK42S6GUIPWG7RD3QVGI",
+    "target_endpoint_arn" : "arn:aws:dms:us-east-1:028824297233:endpoint:MK6QPGXN5SJZ7PXDDZOARWMWZZGAOHTLMDFJMNQ",
+    "migration_type" : "full-load",
+    "cdc_start_time" : null,
+    "cdc_start_position" : null,
+    "replication_task_settings" : {
+      "TargetMetadata": {
+        "TargetSchema": "",
+        "SupportLobs": true,
+        "FullLobMode": true,
+        "LobChunkSize": 64,
+        "LimitedSizeLobMode": false,
+        "InlineLobMaxSize": 1024,
+        "CommitRate": 50000
+      },
+      "FullLoadSettings": {
+        "TargetTablePrepMode": "TRUNCATE_BEFORE_LOAD",
+        "CommitRate": 50000
+      },
+      "ValidationSettings": {
+        "EnableValidation": true,
+        "ValidationMode": "ROW_LEVEL"
+      },
+      "TTSettings" : {},
+      "Logging": {
+        "EnableLogging": false
+      },
+      "ControlTablesSettings": {},
+      "StreamBufferSettings": {},
+      "ChangeProcessingTuning": {},
+      "ChangeProcessingDdlHandlingPolicy": {},
+      "LoopbackPreventionSettings": {},
+      "CharacterSetSettings": null,
+      "BeforeImageSettings": {},
+      "ErrorBehavior": {}
+    },
+    "table_mappings" : {
+      "rules": [{
+        "rule-type": "transformation",
+        "rule-id": "1",
+        "rule-name": "1",
+        "rule-target": "column",
+        "object-locator": {
+          "schema-name": "gradevalidation",
+          "table-name": "%",
+          "column-name": "%"
+        },
+        "rule-action": "convert-lowercase",
+        "value": null,
+        "old-value": null
+      },
+      {
+        "rule-type": "transformation",
+        "rule-id": "2",
+        "rule-name": "2",
+        "rule-target": "table",
+        "object-locator": {
+          "schema-name": "gradevalidation",
+          "table-name": "%"
+        },
+        "rule-action": "convert-lowercase",
+        "value": null,
+        "old-value": null
+      },
+      {
+        "rule-type": "transformation",
+        "rule-id": "3",
+        "rule-name": "3",
+        "rule-target": "schema",
+        "object-locator": {
+          "schema-name": "gradevalidation"
+        },
+        "rule-action": "convert-lowercase",
+        "value": null,
+        "old-value": null
+      },
+      {
+        "rule-type": "selection",
+        "rule-id": "4",
+        "rule-name": "4",
+        "object-locator": {
+          "schema-name": "gradevalidation",
+          "table-name": "%"
+        },
+        "rule-action": "include",
+        "filters": []
+      }]
+    }
+  },
+  {
+    "replication_task_id"  : "tpl1s-dev-dms-gradevalidation-task",
+    "source_endpoint_arn" : "arn:aws:dms:us-east-1:028824297233:endpoint:PIKWIFMTFWG42ZPRUFCCK42S6GUIPWG7RD3QVGI",
+    "target_endpoint_arn" : "arn:aws:dms:us-east-1:028824297233:endpoint:MK6QPGXN5SJZ7PXDDZOARWMWZZGAOHTLMDFJMNQ",
+    "migration_type" : "full-load",
+    "cdc_start_time" : null,
+    "cdc_start_position" : null,
+    "replication_task_settings" : {
+      "TargetMetadata": {
+        "TargetSchema": "",
+        "SupportLobs": true,
+        "FullLobMode": true,
+        "LobChunkSize": 64,
+        "LimitedSizeLobMode": false,
+        "InlineLobMaxSize": 1024,
+        "CommitRate": 50000
+      },
+      "FullLoadSettings": {
+        "TargetTablePrepMode": "TRUNCATE_BEFORE_LOAD",
+        "CommitRate": 50000
+      },
+      "ValidationSettings": {
+        "EnableValidation": true,
+        "ValidationMode": "ROW_LEVEL"
+      },
+      "TTSettings" : {},
+      "Logging": {
+        "EnableLogging": false
+      },
+      "ControlTablesSettings": {},
+      "StreamBufferSettings": {},
+      "ChangeProcessingTuning": {},
+      "ChangeProcessingDdlHandlingPolicy": {},
+      "LoopbackPreventionSettings": {},
+      "CharacterSetSettings": null,
+      "BeforeImageSettings": {},
+      "ErrorBehavior": {}
+    },
+    "table_mappings" : {
+      "rules": [{
+        "rule-type": "transformation",
+        "rule-id": "1",
+        "rule-name": "1",
+        "rule-target": "column",
+        "object-locator": {
+          "schema-name": "gradevalidation",
+          "table-name": "%",
+          "column-name": "%"
+        },
+        "rule-action": "convert-lowercase",
+        "value": null,
+        "old-value": null
+      },
+      {
+        "rule-type": "transformation",
+        "rule-id": "2",
+        "rule-name": "2",
+        "rule-target": "table",
+        "object-locator": {
+          "schema-name": "gradevalidation",
+          "table-name": "%"
+        },
+        "rule-action": "convert-lowercase",
+        "value": null,
+        "old-value": null
+      },
+      {
+        "rule-type": "transformation",
+        "rule-id": "3",
+        "rule-name": "3",
+        "rule-target": "schema",
+        "object-locator": {
+          "schema-name": "gradevalidation"
+        },
+        "rule-action": "convert-lowercase",
+        "value": null,
+        "old-value": null
+      },
+      {
+        "rule-type": "selection",
+        "rule-id": "4",
+        "rule-name": "4",
+        "object-locator": {
+          "schema-name": "gradevalidation",
+          "table-name": "%"
+        },
+        "rule-action": "include",
+        "filters": []
+      }]
+    }
+  }]
+}
