@@ -1,0 +1,18 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "cassandra:Select",
+        "cassandra:Modify",
+        "cassandra:Create"
+      ],
+      "Effect": "Allow",
+      "Resource": [
+        "arn:aws:cassandra:us-east-1:${account_id}:/keyspace/${keyspaces_keyspace_name}/*",
+        "arn:aws:cassandra:us-east-1:${account_id}:/keyspace/system*"
+      ],
+      "Sid": "AllowCassandraReadWrite"
+    }
+  ]
+}
