@@ -1,0 +1,76 @@
+{
+  "tables": [{
+    "table_name": "hikemtesting1_itembyprovider",
+    "table_description": "itembyprovider",
+    "table_throughputmode": "PAY_PER_REQUEST",
+    "table_readcapacity": "0",
+    "table_writecapacity": "0",
+    "table_pointintimerecovery": "ENABLED",
+    "table_clientsidetimestamps": "ENABLED",
+    "table_ttldefault": "0",
+    "table_schema": {
+      "partition_key": "itemid",
+      "clustering_keys": [{
+        "name": "courseid",
+        "order_by": "ASC"
+      },
+      {
+        "name": "userid",
+        "order_by": "ASC"
+      }],
+      "columns": [{
+        "name": "courseid",
+        "type": "text"
+      },
+      {
+        "name": "itemid",
+        "type": "text"
+      },
+      {
+        "name": "lastmodified",
+        "type": "timestamp"
+      },
+      {
+        "name": "userid",
+        "type": "text"
+      }]
+    }
+  },
+  {
+    "table_name": "hikemtesting1_itembygrades",
+    "table_description": "itembygrades",
+    "table_throughputmode": "PAY_PER_REQUEST",
+    "table_readcapacity": "0",
+    "table_writecapacity": "0",
+    "table_pointintimerecovery": "ENABLED",
+    "table_clientsidetimestamps": "ENABLED",
+    "table_ttldefault": "0",
+    "table_schema": {
+      "partition_key": "itemid",
+      "clustering_keys": [{
+        "name": "courseid",
+        "order_by": "ASC"
+      },
+      {
+        "name": "userid",
+        "order_by": "ASC"
+      }],
+      "columns": [{
+        "name": "courseid",
+        "type": "text"
+      },
+      {
+        "name": "itemid",
+        "type": "text"
+      },
+      {
+        "name": "lastmodified",
+        "type": "timestamp"
+      },
+      {
+        "name": "userid",
+        "type": "text"
+      }]
+    }
+  }]
+}
