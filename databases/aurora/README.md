@@ -17,4 +17,4 @@ This Terraform module provisions an AWS Aurora database, supporting both Aurora 
 - Sets up CloudWatch alerts for key database metrics.
 
 ## Example
-Check the `aurora_examples` directory for a complete example on how to use this module.
+Check the `aurora_example` directory for a complete example on how to use this module.
