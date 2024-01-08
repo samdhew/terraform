@@ -1,0 +1,44 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "rds:CopyDBClusterParameterGroup",
+        "rds:CreateDBParameterGroup",
+        "rds:ModifyDBParameterGroup",
+        "rds:CopyDBParameterGroup",
+        "rds:ModifyDBClusterParameterGroup",
+        "rds:DeleteDBParameterGroup",
+        "rds:CreateDBClusterParameterGroup",
+        "rds:DeleteDBClusterParameterGroup",
+        "rds:ResetDBClusterParameterGroup",
+        "rds:ResetDBParameterGroup"
+      ],
+      "Effect": "Allow",
+      "Resource": "*",
+      "Sid": "AllowRDSCustom"
+    },
+    {
+      "Action": [
+        "kms:Decrypt",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo",
+        "kms:DescribeKey",
+        "kms:CreateGrant"
+      ],
+      "Effect": "Allow",
+      "Resource": "*",
+      "Sid": "AllowKMSCustom"
+    },
+    {
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:PutLogEvents",
+        "logs:CreateLogStream"
+      ],
+      "Effect": "Allow",
+      "Resource": "*",
+      "Sid": "AllowLogCustom"
+    }
+  ]
+}
