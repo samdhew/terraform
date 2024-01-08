@@ -1,0 +1,80 @@
+{
+  "tables": [{
+    "table_name": "table1",
+    "table_description": "table1",
+    "table_throughputmode": "PAY_PER_REQUEST",
+    "table_readcapacity": "0",
+    "table_writecapacity": "0",
+    "table_pointintimerecovery": "ENABLED",
+    "table_clientsidetimestamps": "ENABLED",
+    "table_ttldefault": "0",
+    "table_schema": {
+      "partition_keys": [{
+        "name": "itemid"
+      }],
+      "clustering_keys": [{
+        "name": "courseid",
+        "order_by": "ASC"
+      },
+      {
+        "name": "userid",
+        "order_by": "ASC"
+      }],
+      "columns": [{
+        "name": "courseid",
+        "type": "text"
+      },
+      {
+        "name": "itemid",
+        "type": "text"
+      },
+      {
+        "name": "lastmodified",
+        "type": "timestamp"
+      },
+      {
+        "name": "userid",
+        "type": "text"
+      }]
+    }
+  },
+  {
+    "table_name": "table2",
+    "table_description": "table2",
+    "table_throughputmode": "PAY_PER_REQUEST",
+    "table_readcapacity": "0",
+    "table_writecapacity": "0",
+    "table_pointintimerecovery": "ENABLED",
+    "table_clientsidetimestamps": "ENABLED",
+    "table_ttldefault": "0",
+    "table_schema": {
+      "partition_keys": [{
+        "name": "itemid"
+      }],
+      "clustering_keys": [{
+        "name": "courseid",
+        "order_by": "ASC"
+      },
+      {
+        "name": "userid",
+        "order_by": "ASC"
+      }],
+      "columns": [{
+        "name": "courseid",
+        "type": "text"
+      },
+      {
+        "name": "itemid",
+        "type": "text"
+      },
+      {
+        "name": "lastmodified",
+        "type": "timestamp"
+      },
+      {
+        "name": "userid",
+        "type": "text"
+      }]
+    }
+  }]
+}
